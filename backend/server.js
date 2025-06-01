@@ -1,6 +1,13 @@
 //packages
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+import connectDB from './db/db.js';
+//dotenv config and variables
+dotenv.config();
+const URI = process.env.MONGO_URI
+//connect to database
+connectDB(URI);
 //starting app
 const app = express();
 const port = 3000;

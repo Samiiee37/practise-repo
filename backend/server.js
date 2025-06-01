@@ -6,7 +6,7 @@ import connectDB from './db/db.js';
 //routes imports
 import authRoutes from './routes/authroutes.js'
 //dotenv config and variables
-dotenv.config();
+dotenv.config(); // load environment variables from .env for the whole node.js process
 const URI = process.env.MONGO_URI
 //connect to database
 connectDB(URI);

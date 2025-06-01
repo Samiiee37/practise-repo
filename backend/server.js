@@ -14,10 +14,7 @@ const port = 3000;
 //middlewares
 app.use(bodyParser.json());
 //http requests
-app.post('/', (req, res) => {
-    console.log(req.body);
-    res.send('Hello World!');
-});
+
 
 
 
